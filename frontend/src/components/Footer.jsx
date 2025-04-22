@@ -15,8 +15,11 @@ const Footer = () => {
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                     <div>
-                        <h3 className="text-2xl font-bold mb-4">
+                        {/* <h3 className="text-2xl font-bold mb-4">
                             Roots&<span className="text-amber-500">Roams</span>
+                        </h3> */}
+                        <h3 className="text-2xl font-bold mb-4">
+                            visit<span className="text-amber-500">kenya</span>
                         </h3>
                         <p className="text-gray-400 mb-4">
                             Discover the magic of Kenya with our expertly
@@ -130,8 +133,12 @@ const Footer = () => {
 
                 <div className="border-t border-gray-800 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center">
-                        <p className="text-gray-500 text-sm mb-4 md:mb-0">
+                        {/* <p className="text-gray-500 text-sm mb-4 md:mb-0">
                             &copy; {new Date().getFullYear()} Roots&Roams. All
+                            rights reserved.
+                        </p> */}
+                        <p className="text-gray-500 text-sm mb-4 md:mb-0">
+                            &copy; {new Date().getFullYear()} visitkenya. All
                             rights reserved.
                         </p>
                         <div className="flex space-x-6">

@@ -36,19 +36,25 @@ const Header = () => {
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <div className="flex">
-                    <div className="w-24 flex-shrink-0">
+                    {/* <div className="w-24 flex-shrink-0">
                         <img
                             src={logo}
                             alt="roots&roams logo"
                             className="w-full h-auto object-contain"
                         />
-                    </div>
+                    </div> */}
                     <div className="flex items-center">
-                        <h1
+                        {/* <h1
                             className={`text-2xl font-bold ${scrolled ? 'text-emerald-800' : 'text-white'}`}
                         >
                             Roots&
                             <span className="text-amber-500">Roams</span>
+                        </h1> */}
+                        <h1
+                            className={`text-2xl font-bold ${scrolled ? 'text-emerald-800' : 'text-white'}`}
+                        >
+                            visit
+                            <span className="text-amber-500">kenya</span>
                         </h1>
                     </div>
                 </div>

@@ -15,7 +15,8 @@ import CulinaryPage from './pages/CulinaryPage';
 
 function App() {
     useEffect(() => {
-        document.title = 'Roots&Roams - Discover the Magic of Kenya';
+        //document.title = 'Roots&Roams - Discover the Magic of Kenya';
+        document.title = 'visitkenya - Discover the Magic of Kenya';
 
         const handleScroll = (e) => {
             const href = e.currentTarget.getAttribute('href');
