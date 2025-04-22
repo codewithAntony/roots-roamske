@@ -1,10 +1,12 @@
 import React from 'react';
 import { Camera, Compass, Users, Utensils } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const experiences = [
     {
         id: 1,
         title: 'Wildlife Safari',
+        route: 'safari',
         description:
             'Witness the Big Five and the Great Migration in their natural habitat.',
         icon: <Camera className="w-6 h-6" />,
@@ -15,6 +17,7 @@ const experiences = [
     {
         id: 2,
         title: 'Cultural Tours',
+        route: 'cultural',
         description:
             "Immerse yourself in Kenya's rich cultural heritage and traditions.",
         icon: <Users className="w-6 h-6" />,
@@ -25,6 +28,7 @@ const experiences = [
     {
         id: 3,
         title: 'Adventure Activities',
+        route: 'adventure',
         description:
             'From hiking and climbing to water sports and hot air balloon rides.',
         icon: <Compass className="w-6 h-6" />,
@@ -35,6 +39,7 @@ const experiences = [
     {
         id: 4,
         title: 'Culinary Experiences',
+        route: 'safari',
         description:
             'Taste authentic Kenyan cuisine and learn traditional cooking methods.',
         icon: <Utensils className="w-6 h-6" />,
@@ -45,6 +50,12 @@ const experiences = [
 ];
 
 const Experiences = () => {
+    const navigate = useNavigate();
+
+    const handleExploreClick = (experienceType) => {
+        navigate(`/${experienceType.toLowerCase()}`);
+    };
+
     return (
         <section id="experiences" className="py-20">
             <div className="container mx-auto px-4">
@@ -104,6 +115,9 @@ const Experiences = () => {
                                     ))}
                                 </ul>
                                 <button
+                                    onClick={() =>
+                                        handleExploreClick(exp.route)
+                                    }
                                     className={`${exp.bgColor} text-white px-6 py-3 rounded-lg font-medium transition-transform duration-300 hover:scale-105 self-start`}
                                 >
                                     Explore {exp.title}
